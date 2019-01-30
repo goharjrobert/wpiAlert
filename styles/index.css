@@ -1,0 +1,154 @@
+html{
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(191, 191, 191, 0.25);
+}
+
+button:hover{
+    cursor: grab;
+}
+
+.navButtons{
+    height: 5%;
+    width: 49%;
+    font-size: large;
+    color: white;
+    background-color: #71abff;
+    border: none;
+    border-radius: 10px;
+}
+
+.navButtons:hover{
+    background-color: #5e80c4;
+}
+
+.active{
+    background-color: #5e80c4;
+    font-weight: bold;
+}
+
+.header{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.display-1{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.errorMessage{
+    position: fixed;
+    top: 0;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 80%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.messageConfirm{
+    background-color: #33ce63;
+    color: white;
+}
+
+.messageConfirm:hover{
+    background-color: #539c6f;
+    color: white;
+}
+
+.sendMessageCard{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+}
+
+.checked{
+    color: green;
+}
+
+.messageField{
+    height: 15%;
+}
+
+#historyCollapse{
+    margin-top: 2%;
+}
+
+@media screen and (min-width: 768px) {
+    .myNav{
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    img{
+        width: 250px;
+        height: 125px;
+    }
+
+    .messageConfirm{
+        width: 60%;
+    }
+
+    .sendMessageCard{
+        top: 35%;
+        width: 40%;
+        left: 30%;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 20%;
+    }
+
+    .navButtons{
+        height: 10%;
+        width: 100%;
+        margin-bottom: 2%;
+        font-size: large;
+        color: white;
+        border: none;
+    }
+
+    .messageConfirm{
+        width: 100%;
+        font-size: large;
+    }
+
+    .display-1{
+        font-size: 300%;
+    }
+
+    .sendMessageCard{
+        top: 23%;
+        width: 100%;
+        height: 40%;
+    }
+
+    .errorMessage{
+        width: 100%;
+    }
+
+}
+
+
+
