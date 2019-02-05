@@ -53,22 +53,16 @@ else{
 function twilioMessage($names, $phoneNumbers, $message){
 
     $greeting = "";
-    // For testing with just my phone numbers
-    //$names = ['Gohar', 'Gohar'];
-    //$phoneNumbers = ['+15038105042', '+19712916200'];
+      
 
-    $sid = 'ACa568fdcd8afaf1f277db973ce378a5ad';
-    $token = '808e34fcc6e4687a07023e8e0ffaa218';
+    $sid = '***********************************';
+    $token = '*********************************';
 
 //    for ($x=0; $x <= sizeof($names)-1;$x++) {
     for ($x=0; $x < sizeof($names);$x++) {
         if(isset($_SESSION['personalize'])){
             $greeting = "Hey $names[$x], ";
         }
-//        echo "<b>User: </b>" . $names[$x] . '<br>';
-//        echo "<b>Phone Number: </b>" . $phoneNumbers[$x] . '<br>';
-//        echo $greeting . $message . "<br>";
-//        echo "________________________________________________<br>";
 
 
 //        Creates a new instance of a client and sends the text messages
