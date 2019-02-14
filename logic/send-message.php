@@ -22,17 +22,7 @@ if(isset($_POST['send'])){
     unset($_SESSION['phoneNumbers']);
     unset($_SESSION['message']);
     unset($_SESSION['selectedGroup']);
-
-    //Add Michelle in the phone numbers array
-    //array_push($phoneNumbers, '+15037993850');
-    array_push($phoneNumbers, '+19712916200');
-    //array_push($phoneNumbers, '+15036199162');
-
-    //Add Michelle in the names array
-    //array_push($names, 'Michelle');
-    array_push($names, 'Gohar');
-    //array_push($names, 'Rich');
-
+    
 //  Call function to send the message and the parameters are set through session variables
     twilioMessage($names, $phoneNumbers, $message);
 
